@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --green:#008037;
+    --drak-blue:#1C2247;
+    --light-brown:#ECDAB9;
+    --red:#D64528;
+    --dark-brown:#824E00;
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-width:thin;
+    scrollbar-color:var(--green) black;
+}
+html::-webkit-scrollbar{
+    width: 0.5vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #0080373d;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: var(--green);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgba(57, 57, 57, 0.73);
+}
+html::-webkit-scrollbar-track:hover{
+    background-color: black;
+}
+html::-webkit-scrollbar-button{
+    background-color:rgba(57, 57, 57, 0.73) ;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+/* card */
+.contact{
+    background-image: url(../images/Untitled\ \(Desktop\ Wallpaper\)\ \(166\).png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.contact .card{
+    margin: 200px 0;
+    backdrop-filter: blur(0.4rem);
+    color:white ;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid white;
+    background-position: center;
+    box-shadow: #d3d3d3 0px 0px 20px 6px;
+}
+/* card */
+/* footer */
+.footer{
+    padding-top: 150px;
+    background-image: url(../images/Untitled\ \(Website\)\ \(101\).png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.footer::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    filter: opacity(0.5);
+    z-index: 1;
+    transition: 0.6s;
+}
+.footer .logo img{
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+}
+.footer .icons{
+    transition: 0.6s;
+}
+.footer .icons svg:nth-child(1):hover{
+    color: rgb(0, 94, 255);
+    cursor: pointer;
+}
+.footer .icons svg:nth-child(2):hover{
+    color: rgb(0, 166, 255);
+    cursor: pointer;
+}
+.footer .icons svg:nth-child(3):hover{
+    color: rgb(6, 26, 106);
+    cursor: pointer;
+}
+.footer .icons svg:nth-child(4):hover{
+    color: rgb(1, 84, 20);
+    cursor: pointer;
+}
+.footer a{
+    color: rgb(182, 181, 181);
+}
+.footer a:hover{
+    color: white;
+}
+/* footer */
